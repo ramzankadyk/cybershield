@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield Cup | Защита Проекта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--  ШАПКА И АДАПТИВНОЕ МЕНЮ -->
+    <header>
+        <a href="#" class="logo">CyberShield</a>
+        
+        <nav class="nav-links" id="navLinks">
+            <a href="#hero">Главная</a>
+            <a href="#players">Игроки</a>
+            <a href="#shop">Магазин</a>
+            <a href="#calc">Калькулятор</a>
+            <a href="#register">Регистрация</a>
+        </nav>
+
+        <div class="burger" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!--  БАННЕР САЙТА  -->
+    <section class="hero" id="hero">
+        <h1>AGANYM Cup 2026</h1>
+        <p>Главный киберспортивный турнир сезона. Докажи, что твоя команда лучшая!</p>
+        <a href="#register" class="btn-main">Участвовать</a>
+    </section>
+
+    <!--  ГАЛЕРЕЯ ИГРОКОВ  -->
+    <section class="section" id="players">
+        <h2 class="title">Звезды Турнира</h2>
+        
+        <div class="gallery">
+            <div class="card">
+                <img src="collapse.jpg" alt="Collapse">
+                <h3>Collapse</h3>
+                <p>Игра: Dota 2<br>Роль: Offlane (Team Spirit)</p>
+            </div>
+
+            <div class="card">
+                <img src="nightfall.jpg" alt="Nightfall">
+                <h3>Nightfall</h3>
+                <p>Игра: Dota 2<br>Роль: Carry</p>
+            </div>
+
+            <div class="card">
+                <img src="ame.jpg" alt="Ame">
+                <h3>Ame</h3>
+                <p>Игра: Dota 2<br>Роль: Carry (Xtreme Gaming)</p>
+            </div>
+        </div>
+    </section>
+
+    <!--  МАГАЗИН И КОРЗИНА  -->
+    <section class="section" id="shop">
+        <h2 class="title">Магазин Мерча</h2>
+        
+        <div class="shop-grid">
+            <div class="product">
+                <h3>Джерси Команды</h3>
+                <p class="price">2500 KZT</p>
+                <button class="btn-main add-btn" data-name="Джерси Команды" data-price="2500">Купить</button>
+            </div>
+
+            <div class="product">
+                <h3>Игровая Мышь</h3>
+                <p class="price">5000 KZT</p>
+                <button class="btn-main add-btn" data-name="Игровая Мышь" data-price="5000">Купить</button>
+            </div>
+
+            <div class="product">
+                <h3>Коврик для мыши</h3>
+                <p class="price">1500 KZT</p>
+                <button class="btn-main add-btn" data-name="Коврик для мыши" data-price="1500">Купить</button>
+            </div>
+        </div>
+
+        <!-- Корзина -->
+        <div class="cart-box">
+            <h3>Корзина</h3>
+            <ul id="cartList">
+                <li>Корзина пуста...</li>
+            </ul>
+            <p>Итого: <span id="totalPrice">0</span> KZT</p>
+        </div>
+    </section>
+
+    <!--  МИНИ КАЛЬКУЛЯТОР БОНУСОВ -->
+    <section class="section" id="calc">
+        <h2 class="title">Калькулятор Призовых</h2>
+        
+        <div class="calc-box">
+            <label>Количество побед:</label>
+            <input type="number" id="winsInput" placeholder="Введите число">
+            <button class="btn-main" id="calcBtn">Посчитать</button>
+            <p id="calcResult">Призовые: 0 KZT</p>
+        </div>
+    </section>
+
+    <!--  ФОРМА РЕГИСТРАЦИИ -->
+    <section class="section" id="register">
+        <h2 class="title">Регистрация На Турнир</h2>
+        
+        <form id="regForm" class="form">
+            <input type="text" id="username" placeholder="Ваш никнейм" required>
+            <input type="email" id="email" placeholder="Ваш Email" required>
+            <button type="submit" class="btn-main">Зарегистрироваться</button>
+        </form>
+    </section>
+
+    <!--  ПОДВАЛ -->
+    <footer>
+        <p>&copy; 2026 CyberShield Cup. Проект для защиты.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
